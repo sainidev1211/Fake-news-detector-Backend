@@ -1,4 +1,4 @@
-# SentinelLens — Fake News Detector Backend
+# Truthify AI — Fake News Detector Backend
 
 > AI-powered misinformation detection API built with **FastAPI**, **Groq Cloud** (LLaMA 3.3 70B), and **Wikipedia** external verification.
 

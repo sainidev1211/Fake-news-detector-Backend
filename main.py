@@ -31,15 +31,15 @@ async def lifespan(app: FastAPI):
     if not api_key:
         logger.error("GROQ_API_KEY is not set! Please create a .env file.")
     else:
-        logger.info("SentinelLens API started — model=%s", MODEL)
+        logger.info("Truthify AI API started — model=%s", MODEL)
     yield
-    logger.info("SentinelLens API shutting down.")
+    logger.info("Truthify AI API shutting down.")
 
 
 # ── app factory ────────────────────────────────────────────────────────────────
 
 app = FastAPI(
-    title="SentinelLens — Fake News Analyzer API",
+    title="Truthify AI — Fake News Analyzer API",
     description="AI-powered misinformation detection using Groq Cloud + Wikipedia.",
     version="2.0.0",
     lifespan=lifespan,
